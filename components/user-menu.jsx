@@ -1,7 +1,7 @@
 "use client";
+
 import { UserButton } from "@clerk/nextjs";
 import { ChartNoAxesGantt } from "lucide-react";
-import React from "react";
 
 const UserMenu = () => {
   return (

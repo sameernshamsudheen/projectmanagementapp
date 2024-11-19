@@ -8,9 +8,9 @@ import { useOrganization, useUser } from "@clerk/nextjs";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import useFetch from "@/Hooks/use-fetch";
-import { projectSchema } from "@/lib/validator";
-import { createProject } from "@/actions/project";
+import useFetch from "@/hooks/use-fetch";
+import { projectSchema } from "@/app/lib/validators";
+import { createProject } from "@/actions/projects";
 import { BarLoader } from "react-spinners";
 import OrgSwitcher from "@/components/org-switcher";
 

@@ -18,16 +18,16 @@ import { CalendarIcon } from "lucide-react";
 import { DayPicker } from "react-day-picker";
 import { format, addDays } from "date-fns";
 
-import { sprintSchema } from "@/lib/validator";
-import useFetch from "@/Hooks/use-fetch";
-import { createSprint } from "@/actions/sprint";
+import { sprintSchema } from "@/app/lib/validators";
+import useFetch from "@/hooks/use-fetch";
+import { createSprint } from "@/actions/sprints";
 
-const SprinCreationForm = ({
+export default function SprintCreationForm({
   projectTitle,
   projectKey,
   projectId,
   sprintKey,
-}) => {
+}) {
   const [showForm, setShowForm] = useState(false);
   const [dateRange, setDateRange] = useState({
     from: new Date(),
@@ -165,6 +165,4 @@ const SprinCreationForm = ({
       )}
     </>
   );
-};
-
-export default SprinCreationForm;
+}
